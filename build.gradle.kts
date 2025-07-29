@@ -17,6 +17,7 @@ repositories {
     mavenCentral()
 }
 dependencies {
+    implementation("org.ehcache:ehcache:3.9.6")
     implementation(files("C:/Users/lhstack/.jtools/sdk/sdk.jar"))
 }
 

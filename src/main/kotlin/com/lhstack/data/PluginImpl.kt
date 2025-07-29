@@ -150,7 +150,7 @@ class PluginImpl : IPlugin {
                     panel.add(JPanel(BorderLayout()).also { p ->
                         p.add(JLabel("自动格式化: ",JLabel.RIGHT),BorderLayout.WEST)
                         ActionManager.getInstance().createActionToolbar("jtools-data-format@autoFormat",DefaultActionGroup().also { group ->
-                            group.add(object:ToggleAction({"自动格式化"},Helper.findIcon("setting.svg",PluginImpl::class.java)){
+                            group.add(object:ToggleAction({"自动格式化"},Helper.findIcon("auto.svg",PluginImpl::class.java)){
                                 override fun isSelected(e: AnActionEvent): Boolean = cache.get("auto") == "true"
 
                                 override fun setSelected(e: AnActionEvent, state: Boolean) {
